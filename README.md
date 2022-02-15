@@ -35,8 +35,8 @@ or place the file into your source directory.
 
 Use it in your code:
 ```python
-import met_palettes
-colors = met_brew(name="VanGogh1", n=123, brew_type="continuous")
+from met_brewer import brew
+colors = brew(name="VanGogh1", n=123, brew_type="continuous")
 ```
 
 ## Palettes

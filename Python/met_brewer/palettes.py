@@ -59,7 +59,7 @@ COLORBLIND_PALETTES = {name: MET_PALETTES[name] for name in COLORBLIND_PALETTES_
 EXPORT_FORMATS = {"HEX", "DEC", "REL", "XML", "IPE"}
 
 
-def met_brew(name, n=None, brew_type="discrete"):
+def brew(name, n=None, brew_type="discrete"):
 
     palette = MET_PALETTES.get(name)
 
@@ -177,7 +177,7 @@ if __name__ == "__main__":
 
     import matplotlib.pyplot as plt
 
-    colors = met_brew(name="VanGogh1")
+    colors = brew(name="VanGogh1")
 
     plt.figure()
     for i, color in enumerate(colors):
@@ -185,7 +185,7 @@ if __name__ == "__main__":
 
     plt.show()
 
-    colors = met_brew(name="VanGogh1", n=123, brew_type="continuous")
+    colors = brew(name="VanGogh1", n=123, brew_type="continuous")
 
     plt.figure()
     for i, color in enumerate(colors):
